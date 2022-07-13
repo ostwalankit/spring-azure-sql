@@ -1,7 +1,7 @@
 spring:
   datasource:
-    url: jdbc:sqlserver://probit.database.windows.net:1433;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
-    username: probit
+    url: jdbc:sqlserver://springazuresql.database.windows.net:1433;database=springazuresqldb;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: probitdb9
     password: password@123
   jpa:
     show-sql: true
