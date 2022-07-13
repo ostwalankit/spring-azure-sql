@@ -35,7 +35,7 @@ public class SpringAzureSqlApplication {
 
 	@GetMapping("/message")
 	public String welcomeMessage(){
-		return "Welcome to spring azure !!!";
+		return "Welcome to spring azure SQL services !!!";
 	}
 
 }
