@@ -23,14 +23,19 @@ public class SpringAzureSqlApplication {
 	@Autowired
 	private EmployeeRepository repository;
 
-	@PostMapping("/message")
-	public String addEmployee(@RequestBody Employee employee){
-		return "Welcome to spring azure !!!";
+	@PostMapping("/employee")
+	public Employee addEmployee(@RequestBody Employee employee){
+		return repository.save(employee);
 	}
 
 	@GetMapping("/employees")
 	public List<Employee> getEmployees(){
 		return repository.findAll();
+	}
+
+	@GetMapping("/message")
+	public String welcomeMessage(){
+		return "Welcome to spring azure !!!";
 	}
 
 }
